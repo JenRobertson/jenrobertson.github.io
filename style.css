@@ -141,6 +141,10 @@ h1, h2, h3, h4 {
     background-color: #e1f5ceed;
 }
 
+.vimeo {
+    width: 100%;
+}
+
 @font-face {
     font-family: eight-bit-pusab;
     src: url(fonts/8-bit-pusab.ttf);
