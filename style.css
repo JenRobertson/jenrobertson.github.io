@@ -2,6 +2,7 @@ body {
     margin: 0;
     background-color: #5bd3ec;
     background-image: url('img/bg1.png');
+    background-attachment: fixed;
     box-sizing: border-box;
 }
 
@@ -162,4 +163,7 @@ h1, h2, h3, h4 {
 
 .ism-image {
     max-height: 100%;
+    min-height: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
