@@ -1,0 +1,68 @@
+<html>
+<head>
+    <script>
+        window.onload = function () {
+            const table = document.querySelector('#grid');
+            const colourPicker1 = document.querySelector('#colourPicker1');
+            const items = ['Pneumothorax', 'Patient lies', 'Patient has issue which aligns with issue of staff', 'Bad acting from Charlie', 'Dad Issue', 'Rubber baby', 'Primary',  'Secondary', 'Tertiary', 'Hit by car', 'Not been taking their medicine…', 'Let’s all go to the pub', 'Heart to heart', '“You don’t understand!!”', 'Latex flesh', 'Vomit', 'Ded', 'Patient does a runner', 'Family member knows better than the doctors', 'Patient has emotional outburst & falls unconscious', 'Doctor gets over involved in patient’s personal issues', 'Someone falls off somewhere high',  'Patient does not get on with next of kin', '“I feel fine” (isn’t)'];
+
+            function shuffleArray(array) {
+                for (let i = array.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [array[i], array[j]] = [array[j], array[i]];
+                }
+            }
+
+            shuffleArray(items);
+            items.splice(12, 0, '⭐');
+
+            items.forEach((item, index) => {
+                const itemButton = document.createElement('button');
+
+                itemButton.onclick = (e) => {
+                    if (e.target.style.backgroundColor === "white" || !e.target.style.backgroundColor) {
+                        e.target.style.backgroundColor = colourPicker1.value;
+                    } else {
+                        e.target.style.backgroundColor = "white";
+                    }
+                };
+
+                itemButton.innerHTML = item;
+                table.appendChild(itemButton);
+            });
+        }
+    </script>
+    <style>
+        @font-face {
+            font-family: Pixeled;
+            src: url(Pixeled.ttf);
+        }
+        #grid {
+            font-family: Pixeled;
+            width: 600px;
+            height: 600px;
+            display: grid;
+            grid-template-columns: 20% 20% 20% 20% 20%;
+            grid-template-rows: 20% 20% 20% 20% 20%;
+        }
+        button {
+            /* font-family: Pixeled; */
+            background-color: white;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        span {
+            font-size: 50px;
+        }
+    </style>
+</head>
+    <body>
+        <h1>Casulty Bingo</h1>
+        Press on a square to fill it in!!!!
+        Change colour of filled in squares: <input type="color" id="colourPicker1"
+        value="#f542b6">
+        <div id="grid"></div>
+        Refresh for new arrangement.
+    </body>
+</html>
