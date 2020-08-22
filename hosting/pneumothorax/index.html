@@ -4,12 +4,35 @@
         window.onload = function () {
             const table = document.querySelector('#grid');
             const colourPicker1 = document.querySelector('#colourPicker1');
-            const items = ['Pneumothorax', 'Patient lies', 'Patient has issue which aligns with issue of staff', 'Bad acting from Charlie', 'Dad Issue', 'Rubber baby', 'Primary',  'Secondary', 'Tertiary', 'Hit by car', 'Not been taking their medicine…', 'Let’s all go to the pub', 'Heart to heart', '“You don’t understand!!”', 'Latex flesh', 'Vomit', 'Ded', 'Patient does a runner', 'Family member knows better than the doctors', 'Patient has emotional outburst & falls unconscious', 'Doctor gets over involved in patient’s personal issues', 'Someone falls off somewhere high',  'Patient does not get on with next of kin', '“I feel fine” (isn’t)'];
+            const items = ['Pneumothorax',
+             'Patient lies',
+             'Patient has issue which aligns with issue of staff',
+             'Bad acting from Charlie',
+             'Mum/Dad Issue',
+             'Something secret in patient\'s bag',
+             '1️⃣',
+              '2️⃣',
+             '3️⃣',
+             '🚗',
+             'Not been taking their medicine…',
+             'Staff member injured',
+             'Heart to heart',
+             'Gay thoughts',
+             'Latex flesh',
+             '🤮',
+             '💀',
+             '🏃‍♂️',
+             '🩸',
+             'Patient has emotional outburst & falls unconscious',
+             'Doctor gets over involved in patient’s personal issues',
+             'Someone falls off somewhere high',
+              'Patient does not get on with next of kin',
+             '“I feel fine” (isn’t)'];
 
             function shuffleArray(array) {
                 for (let i = array.length - 1; i > 0; i--) {
                     const j = Math.floor(Math.random() * (i + 1));
-                    [array[i], array[j]] = [array[j], array[i]];
+                    [array[i],array[j]] = [array[j], array[i]];
                 }
             }
 
@@ -18,12 +41,16 @@
 
             items.forEach((item, index) => {
                 const itemButton = document.createElement('button');
+                console.log(item.length);
+                if(item.length < 7) {
+                    itemButton.style.fontSize = '50px';
+                }
 
                 itemButton.onclick = (e) => {
                     if (e.target.style.backgroundColor === "white" || !e.target.style.backgroundColor) {
                         e.target.style.backgroundColor = colourPicker1.value;
                     } else {
-                        e.target.style.backgroundColor = "white";
+                        e.target.style.backgroundColor = "#1c1c1c";
                     }
                 };
 
@@ -33,6 +60,10 @@
         }
     </script>
     <style>
+        * {
+            color: #e0cccc;
+            background-color: #1c1c1c;
+        }
         @font-face {
             font-family: Pixeled;
             src: url(Pixeled.ttf);
@@ -47,7 +78,6 @@
         }
         button {
             /* font-family: Pixeled; */
-            background-color: white;
             cursor: pointer;
             font-size: 16px;
         }
