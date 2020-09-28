@@ -41,7 +41,6 @@
 
             items.forEach((item, index) => {
                 const itemButton = document.createElement('button');
-                console.log(item.length);
                 if(item.length < 7) {
                     itemButton.style.fontSize = '50px';
                 }
@@ -50,7 +49,7 @@
                     if (e.target.style.backgroundColor === "white" || !e.target.style.backgroundColor) {
                         e.target.style.backgroundColor = colourPicker1.value;
                     } else {
-                        e.target.style.backgroundColor = "#1c1c1c";
+                        e.target.style.backgroundColor = '';
                     }
                 };
 
