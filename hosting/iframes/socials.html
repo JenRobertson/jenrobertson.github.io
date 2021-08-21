@@ -1,0 +1,78 @@
+<html>
+    <style>
+        #socials {
+            width: 200px;
+            height: 510px;
+            /* background-color: red; */
+            overflow: hidden;
+            position: relative;
+            image-rendering: -moz-crisp-edges;
+            image-rendering: -webkit-crisp-edges;
+            image-rendering: pixelated;
+            image-rendering: crisp-edges;
+        }
+
+        a {
+            width: 100px;
+            height: 100px;
+            display: block;
+            background-size: cover;
+            margin: 15px;
+            box-sizing: border-box;
+        }
+
+        #itch {
+            background-image: url('img/itchio_icon.png');
+        }
+
+        #twitter {
+            background-image: url('img/twitter_icon.png');
+        }
+
+        #facebook {
+            background-image: url('img/facebook_icon.png');
+        }
+
+        #itch:hover, #itch2 {
+            background-image: url('img/itchio_icon--hover.png');
+        }
+
+        #twitter:hover, #twitter2 {
+            background-image: url('img/twitter_icon--hover.png');
+        }
+
+        #facebook:hover, #facebook2 {
+            background-image: url('img/facebook_icon--hover.png');
+        }
+
+        #container {
+            margin-top: 57%;
+        }
+
+        .hidden {
+            position: absolute;
+            overflow: hidden;
+            left: -9999px; 
+            top: -9999px;
+            height: 1px;
+            width: 1px;
+        }
+
+    </style>
+    <head></head>
+    <body>
+        <div id='socials'>
+            <div id='container'>
+                <a id='itch' target="_blank" rel="noopener noreferrer nofollow" href='https://wavingwalrus.itch.io/peckin-pixels'> </a>
+                <a id='twitter' target="_blank" rel="noopener noreferrer nofollow" href='https://twitter.com/wavingwalrus'></a>
+                <a id='facebook' target="_blank" rel="noopener noreferrer nofollow" href='https://www.facebook.com/wavingwalrus'></a>
+                <!-- preload hover -->
+                <div class='hidden'>
+                    <span id='itch2'></span>
+                    <span id='twitter2'></span>
+                    <span id='facebook2'></span>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
