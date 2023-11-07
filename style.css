@@ -17,8 +17,9 @@ main, footer {
 }
 
 footer {
+    background-size: cover;
     text-align: center;
-    background-image: url('img/bg2.png');
+    background-image: url('img/bg2.jpg');
     padding: 20px;
     box-sizing: border-box;
 }
@@ -113,13 +114,14 @@ b {
 }
 
 .section-header {
-    background-image: url('img/bg2.png');
+    background-size: cover;
+    background-image: url('img/bg2.jpg');
     padding: 20px;
 }
 
 .intro-container {
     padding: 30px;
-    background-image: url('img/bg0.png');
+    background-image: url('img/bg0.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -131,25 +133,25 @@ b {
 
 .project {
     padding: 30px;
-    background-image: url('img/bg1.png');
+    background-image: url('img/bg1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .project--bg-1 {
-    background-image: url('img/bg1.png');
+    background-image: url('img/bg0.jpg');
 }
 .project--bg-2 {
-    background-image: url('img/bg2.png');
+    background-image: url('img/bg2.jpg');
 }
 .project--bg-3 {
-    background-image: url('img/bg3.png');
+    background-image: url('img/bg3.jpg');
 }
 .project--bg-4 {
-    background-image: url('img/bg4.png');
+    background-image: url('img/bg4.jpg');
 }
 .project--bg-5 {
-    background-image: url('img/bg5.png');
+    background-image: url('img/bg5.jpg');
 }
 
 .project__container {
@@ -257,3 +259,12 @@ b {
         font-size: 30px;
     }
 }
+
+/* .darkmode.body {
+    background-color: black;
+}
+
+.darkmode .project {
+    background-image: none;
+    background-color: rgb(0, 0, 0);
+} */
