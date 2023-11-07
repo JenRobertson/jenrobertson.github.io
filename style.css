@@ -111,6 +111,7 @@ b {
 @font-face {
     font-family: easvhs;
     src: url(fonts/easvhs.ttf);
+    font-display: swap;
 }
 
 .section-header {
