@@ -246,3 +246,14 @@ b {
         height: auto;
     }
 }
+
+/* small */
+@media only screen and (max-width: 400px) {
+    h2 {
+        font-size: 40px;
+    }
+
+    .tag-line {
+        font-size: 30px;
+    }
+}
