@@ -5,136 +5,321 @@
     <script src="js.js"></script>
     <script src="ism/ism-2.2.min.js"></script>
     <link rel="stylesheet" href="ism/my-slider.css"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     
 </head>
 <body>
     <main>
-        <h1>Jenny Robertson - Portfolio</h1>
-        <img class="header" src="img/header.png" alt="Cartoon of Jenny with images of her games around">
-        <ul>
-            <li>Experienced software engineer:</li>
-            <ul>
-                <li>HTML, Javascript, CSS</li>
-                <li>React, Redux</li>
-            </ul>
-            <li>Avid Javascript Canvas game developer</li>
-            <li>Loves making digital art & Photoshop</li>
-            <li>Experience with 3D modelling in Maya and game dev in Unity</li>
-        </ul>
-        
-        <a target="_blank" rel="noopener noreferrer nofollow" class="button-link" href="https://uk.linkedin.com/in/thejennyrobertson">Linkedin</a>
-        <a target="_blank" rel="noopener noreferrer nofollow" class="button-link" href="https://github.com/JenRobertson">Github</a>
-        <a target="_blank" rel="noopener noreferrer nofollow" class="button-link" href="https://twitter.com/jennygalaxy">Twitter</a>
-        
-        <img class="chicken" src="img/chicken_orange_walk_transparent.gif" alt="chicken walking">
-        
-        <h2>HTML5 Games</h2>
-        
-        <div class="game-links">
-            <button class="game-link game-link--active" aria-label="More about Peckin Pixels">
-                <div class="game-link__div"><span>Peckin' Pixels</span></div>
-                <img class="game-link__image" src="img/peckin.jpg" alt="peckin pixels"></a>
-            </button>
-            <button class="game-link" aria-label="More about Soft Swap">
-                <div class="game-link__div" >Soft Swap</div>
-                <img class="game-link__image" src="img/soft-swap.jpg" alt="soft swap"></a>
-            </button>
-            <button class="game-link" aria-label="More about the Birthday">
-                <div class="game-link__div">The Birthday</div>
-                <img class="game-link__image" src="img/mook.jpg" alt="the birthday"></a>
-            </button>
-            <!-- <button class="game-link" href="games/fish/index.html" target="_blank">
-                <div class="game-link__div">Fish Fight!</div>
-                <img class="game-link__image" src="img/fish.jpg" alt="fish fight"></a>
-            </a> -->
-            
+        <div class="intro-container">
+            <div class="intro">
+                <div class="intro__text">
+                    <h1>Hi, I'm Jenny</h1>
+                    <span class="tag-line">Senior Software Engineer - Web Technologies - Pixel Enthusiast</span>
+                    <a target="_blank" rel="noopener noreferrer nofollow" class="link link--intro" href="https://www.linkedin.com/in/thejennyrobertson/">LinkedIn</a>
+                </div>
+                <img class="intro__picture" src="img/logo-png.png"></img>
+            </div>
+            <p>
+                Senior Software Engineer with over 8 years of professional web Javascript  / Typescript experience and over 5 years of React experience. 
+                Skilled at CSS animation, UI and front end development.
+                Expert in web accessibility. Experienced in AWS, node and backend technologies.
+                Thrives when collaborating and mentoring. Proven experience leading on projects.
+            </p>
         </div>
-        <div class="game-info" style="display: block">
-            <h3>Peckin' Pixels</h3>
-            <a class="button-link" target="_blank" href="https://wavingwalrus.itch.io/peckin-pixels">Play Game</a><a target="_blank" class="button-link" href="https://github.com/JenRobertson/Peckin-Pixels">Repo</a>
-            <p>Peckin' Pixels is build using vanilla javascript and HTML canvas. No libraries or game engines were used, as I really enjoy making things from scratch.</p>
-            
-            <iframe class='vimeo' src="https://player.vimeo.com/video/375085534" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-            
-            <p>It is a drag and drop based game where you play as a chicken farmer. You must look after your chickens, raise their chicks or sell their eggs for profit. The chickens in the game make their own 'decisions'.</p>
-            <p>All art and coding is done by me!</p>
-            <div class="ism-slider jen" id="my-slider2">
+        <div class="section-header">
+            <h2>Experience</h2>
+        </div>
+        <div class="project project--bg-2 project--hero">
+            <h3>Microsoft Rare - Sea of Thieves</h3>
+            <h4>Senior UI Developer - June 2022 - Dec 2023 (Contract)</h4>
+            <div class="project__icons">
+                <li class="project__icon">
+                    <img class="project__icon-image project__icon-image--company" src="img/logos/microsoft.jpg" alt="Microsoft logo">
+                </li>
+                <li class="project__icon">
+                    <img class="project__icon-image project__icon-image--company" src="img/logos/rare.jpg" alt="Rare Logo">
+                </li>
+                <li class="project__icon">
+                    <img class="project__icon-image" alt=" " src="img/icons/html.png">
+                    <span class="project__icon-text">HTML</span>
+                </li>
+                <li class="project__icon">
+                    <img class="project__icon-image" alt=" " src="img/icons/css.png">
+                    <span class="project__icon-text">CSS</span>
+                </li>
+                <li class="project__icon">
+                    <img class="project__icon-image" alt=" " src="img/icons/ts.png">
+                    <span class="project__icon-text">Typescript</span>
+                </li>
+                <li class="project__icon">
+                    <img class="project__icon-image" alt=" " src="img/icons/react.png">
+                    <span class="project__icon-text">React</span>
+                </li>
+            </div>
+            <div class="project__container">
+                <span class="project__intro-text">The slides below show interfaces and animations I directly created:</span>
+                <div class="ism-slider jen slider project__slider" id="my-slider1">
                     <ol>
                         <li>
-                            <img class='ism-image' alt="sprite sheet of chickens" src="img/peckin_slides/chicken_rainbow.png">
+                            <img class='ism-image' alt="Sea of Thieves Reputation screen" src="img/sot/reputation.gif">
                         </li>
                         <li>
-                            <img class='ism-image' alt="sprite sheet of chicks" src="img/peckin_slides/chick.png">
+                            <img class='ism-image' alt="Sea of Thieves Guild Invites screen" src="img/sot/guild-invites.jpg">
                         </li>
                         <li>
-                            <img class='ism-image' alt="sprite sheet of weigher" src="img/peckin_slides/weigher.png">
+                            <img class='ism-image' alt="Sea of Thieves Pirate log screen" src="img/sot/pirate-log.gif">
                         </li>
                         <li>
-                            <img class='ism-image' alt="animated chicken logo" src="img/peckin_slides/peckin-pixeled-animated-logo-itch-io.gif">
+                            <img class='ism-image' alt="Sea of Thieves Guild screen" src="img/sot/guild-upsell.jpg">
                         </li>
                         <li>
-                            <img class='ism-image' alt="animated waving walrus logo" src="img/peckin_slides/waving-walrus-animated.gif">
+                            <img class='ism-image' alt="Sea of Thieves Banners screen" src="img/sot/banners.gif">
                         </li>
                         <li>
-                            <img class='ism-image' alt="gif of gameplay " src="img/peckin_slides/walking about screenshot.gif">
+                            <img class='ism-image' alt="Sea of Thieves Guild Homepage screen" src="img/sot/guild-homepage.jpg">
+                        </li>
+                        <li>
+                            <img class='ism-image' alt="Sea of Thieves Level increase screen" src="img/sot/level-increase.gif">
                         </li>
                     </ol>
                 </div>
+                <div class="project__text">
+                    <b>Sea of Thieves an online action-adventure game by Microsoft Rare.</b>
+                    <p>Contributions:</p>
+                    <li>Lead developer on multiple large new features using HTML, Typescript and CSS</li>
+                    <li>Created accessible and performant in-game interfaces from Figma designs and design documents</li>
+                    <li>Developed high-performance CSS animations</li>
+                    <li>Liaised with multiple disciplines to create API data contracts between frontend and backend</li>
+                    <li>Implemented accessibility enhancements and greatly improved narration and colour contrast</li>
+                    <li>Carried out performance tests and profiling on different devices to meet strict requirements</li>
+                    <li>Incorporated translations from 10+ different languages</li>
+                    <li>Contributed to React tech investigations</li>
+                </div>
+            </div>
         </div>
-        <div class="game-info">
-            <h3>Soft Swap</h3>
-            <a class="button-link" target="_blank" href="/soft-swap">Play Game</a><a target="_blank" class="button-link" href="https://github.com/JenRobertson/treasure-swap">Repo</a>
-            <p>Soft Swap is build using vanilla javascript and HTML canvas. No libraries or game engines were used, as I really enjoy making things from scratch.</p>
-            <p>Use the mouse to select two toys to swap. If 3 or more of the same toy are touching, they dissapear. Look out for the powerups too!</p>
-            <p>All art and coding is done by me, this time using Adobe Illustrator!</p>
-        </div>
-        <div class="game-info">
-            <h3>The Birthday</h3>
-            <a class="button-link" target="_blank" href="/the-birthday">Play Game</a><a target="_blank" class="button-link" href="https://github.com/JenRobertson/mookyawhg">Repo</a>
-            <p>Peckin' Pixels is build using vanilla javascript and HTML canvas. No libraries or game engines were used, as I really enjoy making things from scratch.</p>
-            <p>It is a drag and drop based game where you play as a chicken farmer. You must look after your chickens, raise their chicks or sell their eggs for profit. The chickens in the game make their own 'decisions'.</p>
-            <p>All art and coding is done by me!</p>
-        </div>
-        
-        <h2>Unity Games</h2>
 
-        <p>Slideshow of my work. Everything created using 3D Max, Mudbox and Unity.</p>
-        <div class="ism-slider jen" id="my-slider">
-            <ol>
-                <li>
-                    <img class='ism-image' alt="kraken" src="img/unity_slides/kraken.png">
+        <div class="project project--bg-1">
+            <h3>BBC - Sounds Website</h3>
+            <h4>Senior Software Engineer - Sept 2020 - June 2022</h4>
+            <div class="project__icons">
+                <li class="project__icon">
+                    <img class="project__icon-image project__icon-image--company" src="img/logos/sounds.jpg" alt="BBC Sounds logo">
                 </li>
-                <li>
-                    <img class='ism-image' alt="close up of kraken skin" src="img/unity_slides/kraken_details_2.png">
+                <li class="project__icon">
+                    <img class="project__icon-image" alt=" " src="img/icons/react.png">
+                    <span class="project__icon-text">React</span>
                 </li>
-                <li>
-                    <img class='ism-image' alt="3D modelled animals" src="img/unity_slides/animals.png">
+                <li class="project__icon">
+                    <img class="project__icon-image" alt=" " src="img/icons/aws.png">
+                    <span class="project__icon-text">AWS</span>
                 </li>
-                <li>
-                    <img class='ism-image' alt="pet shop environment" src="img/unity_slides/pet_shop.png">
+                <li class="project__icon">
+                    <img  class="project__icon-image" alt=" " src="img/icons/html.png">
+                    <span class="project__icon-text">HTML</span>
                 </li>
-                <li>
-                    <img class='ism-image' alt="robots" src="img/unity_slides/robot.png">
+                <li class="project__icon">
+                    <img class="project__icon-image" alt=" " src="img/icons/css.png">
+                    <span class="project__icon-text">CSS</span>
                 </li>
-                <li>
-                    <img class='ism-image' alt="sandwhich stacker screen shot" src="img/unity_slides/sandwich_stacker.png">
+                <li class="project__icon">
+                    <img class="project__icon-image" alt=" " src="img/icons/ts.png">
+                    <span class="project__icon-text">Typescript</span>
                 </li>
-                <li>
-                    <img class='ism-image' alt="snail model" src="img/unity_slides/snail.png">
+                <li class="project__icon">
+                    <img class="project__icon-image" alt=" " src="img/icons/js.png">
+                    <span class="project__icon-text">Javascript</span>
                 </li>
-                <li>
-                    <img class='ism-image' alt="stage model" src="img/unity_slides/stage.png">
-                </li>
-                <li>
-                    <img class='ism-image' alt="unity screenshot with chickens" src="img/unity_slides/unity_chicken.jpg">
-                </li>
-            </ol>
+            </div>
+            <div class="project__container">
+                <div class="ism-slider jen slider project__slider" id="my-slider2">
+                    <ol>
+                        <li>
+                            <img class='ism-image' alt="Music items on BBC Sounds website" src="img/sounds/music-items.gif">
+                        </li>
+                        <li>
+                            <img class='ism-image' alt="Single Item Promotion component on BBC Sounds Website" src="img/sounds/SIP.png">
+                        </li>
+                        <li>
+                            <img class='ism-image' alt="Animation of a line being drawn" src="img/sounds/sounds-swipe.gif">
+                        </li>
+                        <li>
+                            <img class='ism-image' alt="An image which is steamed up gets wiped clean" src="img/sounds/steam-swipe.gif">
+                        </li>
+                    </ol>
+                </div>
+                <div class="project__text">
+                    <b>BBC Sounds is a streaming media and audio download service from the BBC that includes live radio broadcasts, audio on demand, and podcasts.</b>
+                    <p>Contributions:</p>
+                    <li>Full stack web developer using Javascript, Typescript, HTML, React, Redux, SASS, Node, AWS</li>
+                    <li>Tech lead for numerous projects - responsible for technical design decisions, breaking down stakeholder requirements into tickets, liaising with designers and overseeing technical quality</li>
+                    <li>Created high quality, performant, accessible React interfaces</li>
+                    <li>Led CSS / web animation projects and investigations.</li>
+                    <li>Accessibility lead for team - personally ensuring accessibility of BBC Sounds website, introducing new testing procedures and being point of contact for accessibility questions</li>
+                    <li>Worked in sub team converting Sounds Web into a Single Page App</li>
+                </div>
+            </div>
         </div>
-        <p>Showreel</p>
-        <iframe class='vimeo' src="https://player.vimeo.com/video/159700825" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-        <h2>Other Art</h2>
-        <a rel="noopener noreferrer nofollow" target="_blank" href="https://www.deviantart.com/jennygalaxy/gallery/">Deviant art</a>
-    </main>
-    
+
+        <div class="project project--bg-4">
+            <h3>BBC - News, iPlayer & Sounds,</h3>
+            <h4>Software Engineer - 2016 - 2020</h4>
+            <div class="project__icons">
+                <li class="project__icon">
+                    <img class="project__icon-image project__icon-image--company" src="img/logos/news.jpg" alt="BBC News Logo">
+                </li>
+                <li class="project__icon">
+                    <img class="project__icon-image project__icon-image--company" src="img/logos/iplayer.jpg" alt="BBC iPlayer Logo">
+                </li>
+                <li class="project__icon">
+                    <img class="project__icon-image project__icon-image--company" src="img/logos/sounds.jpg" alt="BBC Sounds Logo">
+                </li>
+                <li class="project__icon">
+                    <img class="project__icon-image" alt=" " src="img/icons/react.png">
+                    <span class="project__icon-text">React</span>
+                </li>
+                <li class="project__icon">
+                    <img class="project__icon-image" alt=" " src="img/icons/aws.png">
+                    <span class="project__icon-text">AWS</span>
+                </li>
+                <li class="project__icon">
+                    <img  class="project__icon-image" alt=" " src="img/icons/html.png">
+                    <span class="project__icon-text">HTML</span>
+                </li>
+                <li class="project__icon">
+                    <img class="project__icon-image" alt=" " src="img/icons/css.png">
+                    <span class="project__icon-text">CSS</span>
+                </li>
+                <li class="project__icon">
+                    <img class="project__icon-image" alt=" " src="img/icons/ts.png">
+                    <span class="project__icon-text">Typescript</span>
+                </li>
+                <li class="project__icon">
+                    <img class="project__icon-image" alt=" " src="img/icons/js.png">
+                    <span class="project__icon-text">Javascript</span>
+                </li>
+            </div>
+            <div class="project__container">
+                <div class="ism-slider jen slider project__slider" id="my-slider3">
+                    <ol>
+                        <li>
+                            <img class='ism-image' alt="BBC News election results 2016" src="img/bbc/election.jpg">
+                        </li>
+                        <li>
+                            <img class='ism-image' alt="BBC iPlayer screenshot" src="img/bbc/iplayer.jpg">
+                        </li>
+                        <li>
+                            <img class='ism-image' alt="BBC Sounds screenshot" src="img/bbc/sounds.jpg">
+                        </li>
+                        <li>
+                            <img class='ism-image' alt="BBC News article showing expanding component" src="img/bbc/expanders.jpg">
+                        </li>
+                    </ol>
+                </div>
+                <div class="project__text">
+                    <span>Rotated through 4 six month placements in BBC software teams:</span>
+                    <br><br>
+                    <li>BBC News Visual Journalism - Javascript, HTML, CSS, accessibility focus</li>
+                    <li>BBC iPlayer Web - Javascript, React, HTML, CSS, AWS</li>
+                    <li>BBC Sounds - Javascript, React, HTML, CSS, AWS</li>
+                    <li>BBC News Data Systems - Java</li>
+                    <br>
+                    Then secured a permanent role in BBC Sounds.
+                </div>
+            </div>
+        </div>
+
+        <div class="section-header project--bg-3">
+            <h2>Projects</h2>
+        </div>
+
+        <div class="project project--bg-3">
+            <h3>Peckin' Pixels</h3>
+            <a target="_blank" rel="noopener noreferrer nofollow" href="https://wavingwalrus.itch.io/peckin-pixels" class="link">Play Game!</a>
+            <br><br>
+            <div class="project__icons">
+                <li class="project__icon">
+                    <img  class="project__icon-image" alt=" " src="img/icons/html.png">
+                    <span class="project__icon-text">HTML</span>
+                </li>
+                <li class="project__icon">
+                    <img class="project__icon-image" alt=" " src="img/icons/css.png">
+                    <span class="project__icon-text">CSS</span>
+                </li>
+                <li class="project__icon">
+                    <img class="project__icon-image" alt=" " src="img/icons/js.png">
+                    <span class="project__icon-text">Javascript</span>
+                </li>
+                <li class="project__icon">
+                    <img class="project__icon-image" alt=" " src="img/icons/ps.png">
+                    <span class="project__icon-text">Photoshop</span>
+                </li>
+            </div>
+            <div class="project__container">
+                <div class="ism-slider jen slider project__slider" id="my-slider4">
+                    <ol>
+                        <li>
+                            <img class='ism-image' alt="Chickens walking around in game Peckin' Pixels" src="img/peckin/walking about screenshot.gif">
+                        </li>
+                        <li>
+                            <img class='ism-image' alt="Screen showing chicken clothes in game Peckin' Pixels" src="img/peckin/accessories.gif">
+                        </li>
+                        <li>
+                            <img class='ism-image' alt="Peckin' Pixels Logo showing a chicken" src="img/peckin/peckin-pixeled-animated-logo-itch-io.gif">
+                        </li>
+                    </ol>
+                </div>
+                <div class="project__text">
+                    <b>Peckin' Pixels is a popular web game with over 3 million plays.</b>
+                    <p>Contributions:</p>
+                    <li>Solo created - Software engineering, art and game design.</li>
+                    <li>Made using only vanilla Javascript, an HTML canvas and Photoshop.</li>
+                    <li>Downloadable version made in Electron.</li>
+                    <li>Presented at London Creative Coding meetup</li>
+                </div>
+            </div>
+        </div>
+
+        <div class="project project--bg-5">
+            <h3>PR Penguin</h3>
+            <div class="project__icons">
+                <li class="project__icon">
+                    <img class="project__icon-image" alt=" " src="img/icons/js.png">
+                    <span class="project__icon-text">Javascript</span>
+                </li>
+                <li class="project__icon">
+                    <img class="project__icon-image" alt=" " src="img/icons/aws.png">
+                    <span class="project__icon-text">AWS Lambda</span>
+                </li>
+            </div>
+            <div class="project__container">
+                <div class="ism-slider jen slider project__slider" id="my-slider5">
+                    <ol>
+                        <li>
+                            <img class='ism-image' alt="Screenshot showing message with link to a PR and 2 buttons" src="img/penguin/penguin1.png">
+                        </li>
+                        <li>
+                            <img class='ism-image' alt="Screenshot showing button now changed stage" src="img/penguin/penguin2.png">
+                        </li>
+                        <li>
+                            <img class='ism-image' alt="Screenshot showing message now collapsed" src="img/penguin/penguin3.png">
+                        </li>
+                    </ol>
+                </div>
+                <div class="project__text">
+                    <b>PR Penguin is an internal tool used by hundreds of BBC developers.</b>
+                    <li>Created using an Amazon Web Service Lambda.</li>
+                    <li>Written in Javascript.</li>
+                    <li>It is a Slack Bot which allows BBC developers to create formatted Github pull requested messages.</li>
+                    <li>Buttons in the message can be selected by any user to update the status of the review.</li>
+                    <li>Rolled out to entire BBC developer community.</li>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>Website designed and developed by Jen - Copyright Jenny Robertson <span id="year">2023</span></footer>
 </body>
 </html>
