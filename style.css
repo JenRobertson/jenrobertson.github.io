@@ -216,6 +216,10 @@ b {
     }
 }
 
+.project__text-list {
+    padding-left: 10px;
+}
+
 /* small */
 @media only screen and (max-width: 900px) {
     .intro {
