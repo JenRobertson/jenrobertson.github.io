@@ -241,4 +241,8 @@ b {
     h2 {
         font-size: 55px;
     }
+
+    .intro__picture {
+        height: auto;
+    }
 }
